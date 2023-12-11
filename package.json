@@ -1,0 +1,36 @@
+{
+  "name": "cy-sauce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run",
+    "test:login": "cypress run --spec cypress/e2e/login_test.cy.js --headed",
+    "test:shop": "cypress run --spec cypress/e2e/shoppingcart_test.cy.js --headed",
+    "cy:regression": "npx cypress run --browser chrome --spec cypress/e2e/*.cy.js",
+    "cypress:run:report": "cypress run --reporter cypress-mochawesome-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.15.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.18.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "stepDefinitions": [
+    "cypress/e2e/[filepart]/step_definitions/**/*.{js,ts}"
+  ],
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "cypress-tags": "^1.1.2"
+  }
+}

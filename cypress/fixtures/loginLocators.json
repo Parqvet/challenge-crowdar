@@ -1,0 +1,7 @@
+{
+    "input_username": "#user-name",
+    "input_password": "#password",
+    "btn_login": "#login-button",
+    "login_logo": ".login_logo",
+    "msg_error": ".error-message-container"
+}

@@ -1,0 +1,10 @@
+{
+    "titulo_home": ".app_logo",
+    "btn_burger": "#react-burger-menu-btn",
+    "link_logout": "#logout_sidebar_link",
+    "select_filter": ".product_sort_container",
+    "btn_add_product": "#add-to-cart-sauce-labs-backpack",
+    "shopping_cart_badge": ".shopping_cart_badge",
+    "link_shopping_cart": ".shopping_cart_link",
+    "inventory_products_name": ".inventory_item_name"
+}

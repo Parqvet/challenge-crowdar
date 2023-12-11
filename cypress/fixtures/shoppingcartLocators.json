@@ -1,0 +1,9 @@
+{
+    "titulo_cart": ".title",
+    "titulo_product_cart": ".inventory_item_name",
+    "btn_checkout": "#checkout",
+    "shopping_cart_badge": ".shopping_cart_badge",
+    "item_price": ".inventory_item_price",
+    "shopping_cart_link": ".shopping_cart_link",
+    "continue_shop": "#continue-shopping"
+}

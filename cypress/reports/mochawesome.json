@@ -1,0 +1,190 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-12-09T11:30:51.876Z",
+    "end": "2023-12-09T11:31:14.552Z",
+    "duration": 22676,
+    "testsRegistered": 5,
+    "passPercent": 60,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "580eda4e-bf34-4135-9c0c-bf4cd30502c3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\home_test.cy.js",
+      "file": "cypress\\e2e\\home_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d19b7d61-143a-4d37-a739-138113d7f66d",
+          "title": "Home Fixture",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deberia agregar un producto al carrito al hacer click en Add to cart desde el Home",
+              "fullTitle": "Home Fixture Deberia agregar un producto al carrito al hacer click en Add to cart desde el Home",
+              "timedOut": null,
+              "duration": 7201,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\home_test.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\e2e\\\\home_test.cy.js\\\\Home Fixture -- Deberia agregar un producto al carrito al hacer click en Add to cart desde el Home (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "homePage.agregarProcutoAlCarritoDesdeHome();\nhomePage.verificarProductoAgregadoAlCarrito();",
+              "err": {
+                "message": "TypeError: homePage.agregarProcutoAlCarritoDesdeHome is not a function",
+                "estack": "TypeError: homePage.agregarProcutoAlCarritoDesdeHome is not a function\n    at Context.eval (webpack:///./cypress/e2e/home_test.cy.js:26:13)",
+                "diff": null
+              },
+              "uuid": "95e70e9a-1b6f-43b0-b6d4-41696922a6b1",
+              "parentUUID": "d19b7d61-143a-4d37-a739-138113d7f66d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deberia quitar el producto del carrito desde el Home",
+              "fullTitle": "Home Fixture Deberia quitar el producto del carrito desde el Home",
+              "timedOut": null,
+              "duration": 3704,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\home_test.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\e2e\\\\home_test.cy.js\\\\Home Fixture -- Deberia quitar el producto del carrito desde el Home (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "homePage.agregarProcutoAlCarritoDesdeHome();\nhomePage.verificarProductoAgregadoAlCarrito();\nhomePage.quitarProductoDelCarrito();\nhomePage.verificarCarritoVacio();\nutils.verificarElementoYContenido(_homeLocators.default.btn_add_product, 'Add to cart');",
+              "err": {
+                "message": "TypeError: homePage.agregarProcutoAlCarritoDesdeHome is not a function",
+                "estack": "TypeError: homePage.agregarProcutoAlCarritoDesdeHome is not a function\n    at Context.eval (webpack:///./cypress/e2e/home_test.cy.js:31:13)",
+                "diff": null
+              },
+              "uuid": "d1a81017-f639-45b5-82cb-79f873d4450b",
+              "parentUUID": "d19b7d61-143a-4d37-a739-138113d7f66d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deberia seleccionar el filtro Z to A",
+              "fullTitle": "Home Fixture Deberia seleccionar el filtro Z to A",
+              "timedOut": null,
+              "duration": 5172,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home_test.cy.js\"\n}",
+              "code": "utils.seleccionarFiltro(_homeLocators.default.select_filter, 'Name (Z to A)');\nutils.verificarElementoYContenido(_homeLocators.default.select_filter, 'Name (Z to A)');",
+              "err": {},
+              "uuid": "c8165e3e-707c-48f4-b8ad-e4c6c13d75ae",
+              "parentUUID": "d19b7d61-143a-4d37-a739-138113d7f66d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deberia seleccionar el filtro Price (low to high)",
+              "fullTitle": "Home Fixture Deberia seleccionar el filtro Price (low to high)",
+              "timedOut": null,
+              "duration": 2857,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home_test.cy.js\"\n}",
+              "code": "utils.seleccionarFiltro(_homeLocators.default.select_filter, 'Price (low to high)');\nutils.verificarElementoYContenido(_homeLocators.default.select_filter, 'Price (low to high)');",
+              "err": {},
+              "uuid": "f7d86f83-a0cb-43f7-bed8-6b57885d7d52",
+              "parentUUID": "d19b7d61-143a-4d37-a739-138113d7f66d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deberia seleccionar el filtro Price (high to low)",
+              "fullTitle": "Home Fixture Deberia seleccionar el filtro Price (high to low)",
+              "timedOut": null,
+              "duration": 2777,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home_test.cy.js\"\n}",
+              "code": "utils.seleccionarFiltro(_homeLocators.default.select_filter, 'Price (high to low)');\nutils.verificarElementoYContenido(_homeLocators.default.select_filter, 'Price (high to low)');",
+              "err": {},
+              "uuid": "bbe207a7-14a0-412f-8f47-ce6485adf690",
+              "parentUUID": "d19b7d61-143a-4d37-a739-138113d7f66d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c8165e3e-707c-48f4-b8ad-e4c6c13d75ae",
+            "f7d86f83-a0cb-43f7-bed8-6b57885d7d52",
+            "bbe207a7-14a0-412f-8f47-ce6485adf690"
+          ],
+          "failures": [
+            "95e70e9a-1b6f-43b0-b6d4-41696922a6b1",
+            "d1a81017-f639-45b5-82cb-79f873d4450b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 21711,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "timestampFilename": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

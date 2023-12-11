@@ -1,0 +1,10 @@
+{
+    "titulo_checkout": ".title",
+    "input_firstname": "#first-name",
+    "input_lastname": "#last-name",
+    "input_postal_code": "#postal-code",
+    "btn_continue": "#continue",
+    "description_title": ".cart_desc_label",
+    "btn_finish": "#finish",
+    "titulo_complete": ".complete-header"
+}
